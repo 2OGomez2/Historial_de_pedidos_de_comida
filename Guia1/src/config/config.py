@@ -3,10 +3,7 @@ from decouple import config
 
 class Config:
     SECRET_KEY = config('SECRET_KEY')
-    TWILIO_ACCOUNT_SID = config('TWILIO_ACCOUNT_SID')
-    TWILIO_AUTH_TOKEN = config('TWILIO_AUTH_TOKEN')
-    TWILIO_WHATSAPP_NUMBER = config('TWILIO_WHATSAPP_NUMBER')
-
+    
     # Agrega aquí si deseas configurar base de datos u otros servicios
     PGSQL_HOST = config('PGSQL_HOST')
     PGSQL_USER = config('PGSQL_USER')
